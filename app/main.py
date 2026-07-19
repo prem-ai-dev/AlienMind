@@ -77,7 +77,7 @@ app = FastAPI(title="AlienMind", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173", "https://alien-mind-frontend-2c1l0gp0o-alien-ecosystem.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
